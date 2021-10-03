@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const {
-    categories = [],
     setCurrentCategory,
     contactSelected,
     currentCategory,
@@ -11,7 +9,7 @@ function Nav(props) {
   } = props;
 
   useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
+    document.title = currentCategory;
   }, [currentCategory]);
 
   return (
@@ -23,23 +21,54 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row ulStyle">
+
+          {/* ABOUT SECTION */}
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              ABOUT
-            </a>
+            <span
+              onClick={() => {
+                setCurrentCategory("ABOUT");
+                setContactSelected(false);
+              }}
+            >
+              <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+                ABOUT
+              </a>
+            </span>
           </li>
+
+          {/* PORTFOLIO SECTION */}
           <li className="mx-2">
-            <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
-              PORTFOLIO
-            </a>
+            <span
+              onClick={() => {
+                setCurrentCategory("PORTFOLIO");
+                setContactSelected(false);
+              }}
+            >
+              <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
+                PORTFOLIO
+              </a>
+            </span>
           </li>
+
+          {/* RESUME SECTION */}
           <li className="mx-2">
-            <a data-testid="resume" href="#portfolio" onClick={() => setContactSelected(false)}>
-              RESUME
-            </a>
+            <span
+              onClick={() => {
+                setCurrentCategory("RESUME");
+                setContactSelected(false);
+              }}
+            >
+              <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
+                RESUME
+              </a>
+            </span>
           </li>
+
+          {/* CONTACT SECTION */}
           <li className="mx-2">
-            <span onClick={() => setContactSelected(true)}>CONTACT</span>
+            <span onClick={() => { setCurrentCategory("CONTACT"); }}><a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
+              CONTACT
+            </a></span>
           </li>
           {/* {categories.map((category) => (
             <li
