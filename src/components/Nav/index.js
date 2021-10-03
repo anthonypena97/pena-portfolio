@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function Nav(props) {
   const {
     setCurrentCategory,
-    contactSelected,
+    // contactSelected,
     currentCategory,
     setContactSelected,
   } = props;
