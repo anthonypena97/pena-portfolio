@@ -14,8 +14,8 @@ function Resume(props) {
     return (
       <section className="my-5 resumeSection">
         <div className="container">
-          <div className="row-md-12">
-            <div className="col resumeItem">
+          <div className="row">
+            <div className="col-md resumeItem">
               Front End
               <br></br>
               <br></br>
@@ -37,7 +37,7 @@ function Resume(props) {
               <br></br>
               MAX
             </div>
-            <div className="col-md-12 resumeItem">
+            <div className="col-md resumeItem">
               Back End
               <br></br>
               <br></br>
@@ -55,7 +55,7 @@ function Resume(props) {
               <br></br>
               GRAPHQL
             </div>
-            <div className="col-md-12 resumeItem">
+            <div className="col-md resumeItem">
               Dev Tools
               <br></br>
               <br></br>

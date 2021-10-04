@@ -189,8 +189,8 @@ ul {
   border-style: solid;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
-  
 }
+
 .itemTwo{
   background-color: green;
 }
@@ -441,6 +441,11 @@ padding-right: 35vw;
 
   .resumeItem{
     margin-bottom: 2vh;
+  }
+
+  .resumeItem{
+   margin-left: 0vw;
+    margin-right: 0vw;
   }
 
   /* =================== footer ============== */
