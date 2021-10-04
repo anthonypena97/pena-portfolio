@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from '../../assets/images/anthonypena-2.jpeg'
+
 function About(props) {
 
   const {
@@ -12,7 +14,7 @@ function About(props) {
     return (
       <section className="my-5 aboutStyle">
         <div className="aboutContainers aboutImage">
-          <img src="/images/anthonypena-2.jpeg" className="my-2 " style={{ width: "100%" }} alt="cover" />
+          <img src={Image} className="my-2 " style={{ width: "100%" }} alt="cover" />
         </div>
         <div className=" aboutContainers aboutText">
           <p>

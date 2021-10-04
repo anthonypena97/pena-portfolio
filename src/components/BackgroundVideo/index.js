@@ -1,10 +1,11 @@
 import React from 'react';
+import Video from '../../assets/video/website-video.mp4'
 
 const BackgroundVideo = () => {
 
   return (
     <video autoPlay muted loop className="backgroundVideo">
-      <source src="/video/website-video.mp4" type="video/mp4" />
+      <source src={Video} type="video/mp4" />
     </video>
   );
 };
