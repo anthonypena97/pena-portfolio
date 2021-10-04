@@ -127,7 +127,7 @@ function Nav(props) {
         {/* ABOUT TAB */}
         <span id="aboutDrop" style={{ display: "none" }}
           onClick={() => {
-            setCurrentCategory("RESUME");
+            setCurrentCategory("ABOUT");
             setContactSelected(false);
           }}
         >
@@ -139,7 +139,7 @@ function Nav(props) {
         {/* PORTFOLIO TAB */}
         <span id="portfolioDrop" style={{ display: "none" }}
           onClick={() => {
-            setCurrentCategory("RESUME");
+            setCurrentCategory("PORTFOLIO");
             setContactSelected(false);
           }}
         >
