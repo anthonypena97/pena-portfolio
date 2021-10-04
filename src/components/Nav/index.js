@@ -62,10 +62,10 @@ function Nav(props) {
       {/* =============================== regular navbar ================================ */}
 
       <nav className="bigNav">
-        <ul className="flex-row ulStyle">
+        <ul className="flex-row liStyle">
 
           {/* ABOUT SECTION */}
-          <li className="mx-2">
+          <li className="mx-2 liStyle">
             <span
               onClick={() => {
                 setCurrentCategory("ABOUT");
@@ -81,6 +81,7 @@ function Nav(props) {
           {/* PORTFOLIO SECTION */}
           <li className="mx-2">
             <span
+              className="liStyle"
               onClick={() => {
                 setCurrentCategory("PORTFOLIO");
                 setContactSelected(false);
@@ -93,7 +94,7 @@ function Nav(props) {
           </li>
 
           {/* RESUME SECTION */}
-          <li className="mx-2">
+          <li className="mx-2 liStyle">
             <span
               onClick={() => {
                 setCurrentCategory("RESUME");
@@ -107,7 +108,7 @@ function Nav(props) {
           </li>
 
           {/* CONTACT SECTION */}
-          <li className="mx-2">
+          <li className="mx-2 liStyle">
             <span onClick={() => { setCurrentCategory("CONTACT"); }}><a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
               CONTACT
             </a></span>

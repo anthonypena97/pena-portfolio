@@ -5,6 +5,7 @@ body {
 
 ul {
   list-style-type: none;
+  margin-top: 2vh;
 }
 
 ::-webkit-scrollbar {
@@ -40,8 +41,51 @@ ul {
   /* background-color: green; */
 }
 
+.siteTitle{
+  vertical-align: text-bottom;
+}
+
+.liStyle{
+  vertical-align: text-bottom;
+}
+
 .smallNav{
   display: none;
+}
+
+/* ================ PORTFOLIO ============== */
+
+.portfolioSection{
+  /* background-color: cadetblue; */
+  margin-left: 18vw;
+  margin-right: 18vw;
+  margin-bottom: 18vh;
+}
+
+.portfolioBody{
+  background-color: rgba(3, 3, 65, 0.705);
+  /* padding-bottom: 2vh; */
+  /* border-top-style: none; */
+  height: 33vh;
+  border-top-style: none;
+}
+
+.portfolioLink {
+ color: white;
+  background-color: rgba(75, 110, 224, 0.634);
+  text-align: center;
+  padding: 0.5vh;
+  border-top-style: none;
+
+}
+
+.portfolioLink:hover {
+ opacity: 0.5;
+}
+
+
+.portfolioList{
+  margin:0;
 }
 
 /* ======================== CONTACT SECTION ==================== */
@@ -268,7 +312,7 @@ padding-right: 35vw;
     position: relative;
     z-index: 100;
     width: 100vw;
-    height: 24vh;
+    height: 26vh;
     /* background-color: magenta; */
   }
 
@@ -277,11 +321,13 @@ padding-right: 35vw;
    width: 100vw;
    /* margin-left: 5vw; */
    /* margin-right: 20%; */
+   
   }
 
  .menuButton{
    padding: 0vh;
    margin: 1.1vh;
+  
  }
   
   .menuButton:active{
@@ -437,6 +483,9 @@ padding-right: 35vw;
   .resumeSection{
     padding-top: 2vh;
     overflow-y: scroll;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    height: 55vh;
   }
 
   .resumeItem{
@@ -446,6 +495,54 @@ padding-right: 35vw;
   .resumeItem{
    margin-left: 0vw;
     margin-right: 0vw;
+  }
+
+  /* ================= portfolio =============== */
+
+  .portfolioSection{
+    /* background-color: cadetblue; */
+    margin: 0;
+    padding: 0;
+    margin-top: 6vh;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* margin-bottom: 18vh; */
+    height: 55vh;
+    overflow-y: scroll;
+  }
+
+  .card{
+    margin:0;
+    border-style: none;
+  }
+
+  .portfolioBody{
+    background-color: rgba(3, 3, 65, 0.705);
+    /* padding-bottom: 2vh; */
+    /* border-top-style: none; */
+    height: 33vh;
+    border-top-style: none;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  
+  .portfolioLink {
+   color: white;
+    background-color: rgba(75, 110, 224, 0.634);
+    text-align: center;
+    padding: 0.5vh;
+    border-top-style: none;
+  
+  }
+  
+  .portfolioLink:hover {
+   opacity: 0.5;
+  }
+  
+  
+  .portfolioList{
+    margin:0;
   }
 
   /* =================== footer ============== */
