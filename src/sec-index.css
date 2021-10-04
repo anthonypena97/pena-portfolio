@@ -7,6 +7,12 @@ ul {
   list-style-type: none;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+  background: transparent; /* make scrollbar transparent */
+}
+
 .backgroundVideo{
   position: fixed;
   z-index: -2;
@@ -27,7 +33,7 @@ ul {
   display: flex;
   width: 100%;
   /* height: 100%; */
-  height: 75vh;
+  height: 50vh;
   margin-bottom: 15vh;
   /* background-color: green; */
 }
@@ -217,13 +223,10 @@ padding-right: 35vw;
     position: relative;
     z-index: 100;
     width: 100vw;
-    height: 25vh;
+    height: 28vh;
     /* background-color: magenta; */
   }
 
-  .smallNav span{
-   z-index: 50;
-  }
 
   .smallNav div{
    width: 100vw;
@@ -231,7 +234,10 @@ padding-right: 35vw;
    /* margin-right: 20%; */
   }
 
- 
+ .menuButton{
+   padding: 0vh;
+   margin: 1.1vh;
+ }
   
   .menuButton:active{
     opacity: 75%;
@@ -274,7 +280,7 @@ padding-right: 35vw;
 .mainStyle{
   /* background-color: brown; */
   position: relative;
-  bottom: 25vh;
+  bottom: 28vh;
   /* mar */
 }
 
@@ -305,7 +311,7 @@ padding-right: 35vw;
    
     /* display: flex; */
     display: block;
-    height:60vh;
+    height:50vh;
     overflow-y: scroll;
     /* background-color: maroon; */
   
@@ -336,26 +342,40 @@ padding-right: 35vw;
     /* width: 70vw; */
     padding: 0;
     margin: 0;
-    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
   }
 
   .aboutImage img{
     /* width: 70vw; */
     padding: 0;
     margin: 0;
-    z-index: -1;
+    /* z-index: -1; */
+    /* height: 100%; */
+    /* object-fit: cover */
   }
 
   .aboutText {
     padding-top: 15px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
 
   .aboutText p{
-    font-size: 6vw;
+    font-size: 5vw;
+    margin-top: 1vh;
   }
 
   .aboutTextTitle{
     text-align: center;
+  }
+
+  .descriptionText p {
+    font-size: 4vw;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   /* =================== footer ============== */
