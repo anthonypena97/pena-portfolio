@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import BackgroundVideo from './components/BackgroundVideo';
 import Nav from './components/Nav';
-// import About from './components/About';
-// import Gallery from './components/Gallery';
+import About from './components/About';
+import Portfolio from './components/Portfolio'
+import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
 
-  const [currentCategory, setCurrentCategory] = useState("ANTHONY PEÑA");
+  const [currentCategory, setCurrentCategory] = useState("ABOUT");
 
   const [contactSelected, setContactSelected] = useState(false);
 
@@ -31,7 +32,17 @@ function App() {
         {!contactSelected ? (
           <>
 
+            <About
+              currentCategory={currentCategory}
+            ></About>
 
+            <Resume
+              currentCategory={currentCategory}
+            ></Resume>
+
+            <Portfolio
+              currentCategory={currentCategory}
+            ></Portfolio>
 
           </>
         ) : (
