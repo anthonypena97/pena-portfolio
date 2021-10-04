@@ -12,7 +12,7 @@
 
 Portfolio written using [React.JS](https://reactjs.org/)
 
-[jQuery](https://jquery.com/) and [Boostrap](https://getbootstrap.com/) were included in this code.
+[jQuery](https://jquery.com/) and [Bootstrap](https://getbootstrap.com/) were included in this code.
 
 React app deployed on GitHub Pages!
 
