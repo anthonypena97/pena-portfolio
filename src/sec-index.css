@@ -483,18 +483,24 @@ padding-right: 35vw;
   .resumeSection{
     padding-top: 2vh;
     overflow-y: scroll;
-    padding-top: 10vh;
+    padding-top: 6vh;
     padding-bottom: 30vh;
     height: 55vh;
   }
 
   .resumeItem{
-    margin-bottom: 2vh;
+    height: 85%;
+    margin-bottom: 6vh;
   }
 
   .resumeItem{
    margin-left: 0vw;
     margin-right: 0vw;
+  }
+
+  .resumeDownload{
+    /* background-color: tomato; */
+    padding-top: 8vh;
   }
 
   /* ================= portfolio =============== */
@@ -504,8 +510,8 @@ padding-right: 35vw;
     margin: 0;
     padding: 0;
     margin-top: 6vh;
-
-    margin-left: 10vw;
+    padding-top: 12vh;
+    margin-left: 12vw;
     margin-right: 10vw;
     /* margin-bottom: 18vh; */
     height: 55vh;

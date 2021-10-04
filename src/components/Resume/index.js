@@ -81,7 +81,7 @@ function Resume(props) {
         </div>
         <div className="resumeDownload">
 
-          <a href={ResumeFile} download="ANTHONYPENA_RESUME_2021.pdf" target="_blank" rel="noopener noreferrer" >
+          <a href={ResumeFile} className="resumeButton" download="ANTHONYPENA_RESUME_2021.pdf" target="_blank" rel="noopener noreferrer" >
             DOWNLOAD RESUME
           </a>
 
