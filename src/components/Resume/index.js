@@ -11,10 +11,13 @@ function Resume(props) {
 
   if (currentCategory === "RESUME") {
 
+    // RESUME SECTION
     return (
       <section className="my-5 resumeSection">
         <div className="container">
           <div className="row">
+
+            {/* FRONT END PROFICIENCY */}
             <div className="col-md resumeItem">
               Front End
               <br></br>
@@ -37,6 +40,8 @@ function Resume(props) {
               <br></br>
               MAX
             </div>
+
+            {/* BACK END PROFICIENCY */}
             <div className="col-md resumeItem">
               Back End
               <br></br>
@@ -55,6 +60,8 @@ function Resume(props) {
               <br></br>
               GRAPHQL
             </div>
+
+            {/* DEVELOPERS TOOLS UNDER MY BELT */}
             <div className="col-md resumeItem">
               Dev Tools
               <br></br>
@@ -79,6 +86,8 @@ function Resume(props) {
             </div>
           </div>
         </div>
+
+        {/* DOWNLOAD TO MY RESUME */}
         <div className="resumeDownload">
 
           <a href={ResumeFile} className="resumeButton" download="ANTHONYPENA_RESUME_2021.pdf" target="_blank" rel="noopener noreferrer" >

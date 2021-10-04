@@ -12,7 +12,6 @@ function Portfolio(props) {
     currentCategory
   } = props;
 
-  // console.log(currentCategory);
 
   if (currentCategory === "PORTFOLIO") {
 

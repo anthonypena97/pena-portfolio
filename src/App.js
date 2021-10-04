@@ -9,16 +9,18 @@ import Footer from './components/Footer';
 
 function App() {
 
+  // KEEPS TRACK OF WHAT SECTION THE USE IS CURRENTLY ON
   const [currentCategory, setCurrentCategory] = useState("ABOUT");
 
+  // PREPARES FOR IF THE CONTACT COMPONENET IS CHOSEN
   const [contactSelected, setContactSelected] = useState(false);
 
+  // KEEPS TRACK OF THE OPEN OR CLOSE STATE OF THE MOBILE NAVMENU
   const [dropdownState, setDropdownState] = useState(0);
 
   return (
     <div className="pageStyle">
       <BackgroundVideo></BackgroundVideo>
-      {/* <h1>ANTHONY PENA</h1> */}
       <Nav
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
