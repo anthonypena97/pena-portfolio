@@ -22,18 +22,20 @@ ul {
   min-height: 100%;
 }
 
+/* ======================= HEADER NAVBAR ========================= */
+
 .headerStyle{
   margin-top: 2.5%;
   margin-left: 6%;
   margin-right: 6%;
-  margin-bottom: 5%;
+  margin-bottom: 2vh;
 }
 
 .mainStyle{
   display: flex;
   width: 100%;
   /* height: 100%; */
-  height: 50vh;
+  height: 90vh;
   margin-bottom: 15vh;
   /* background-color: green; */
 }
@@ -42,33 +44,7 @@ ul {
   display: none;
 }
 
-.footerStyle{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
-  /* background-color: red; */
-  /* margin-top: auto; */
-  padding-bottom: 2.5%;
-}
-
-.footerElements{
-  float: right;
-  margin-right: 16%;
-  /* background-color: green; */
-  display: inline-flex;
-}
-
-.pixelIcon{
-  width: 2.5vw;
-  margin-left: 5px;
-}
-
-.pixelIcon:hover{
-  opacity: 50%;
-  
-}
+/* ======================== CONTACT SECTION ==================== */
 
 .contactSection{
   flex: 1;
@@ -94,6 +70,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 65vh;
 }
 
 .contactSection div{
@@ -122,18 +99,20 @@ ul {
   width: 100%;
 }
 
-
 .pageStyle{
   /* background-color: hotpink; */
   height: 100vh;
   width: 100vw;
 }
 
+/* ============================ ABOUT PAGE ======================= */
+
 .aboutStyle{
   padding-left: 20vw;
   padding-right: 20vw;
   display: flex;
   /* background-color: maroon; */
+  margin-top: 5vh;
 
   -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 10s; /* Firefox < 16 */
@@ -183,7 +162,7 @@ ul {
 }
 
 .aboutImage{
-  width: 70vw;
+  width: 60vw;
 }
 
 
@@ -191,7 +170,73 @@ ul {
   font-size: 2vw;
 }
 
-/* ==================== iphone ======================== */
+/* ============================= RESUME ======================== */
+
+.resumeSection{
+  /* background-color: crimson; */
+  width: 100vw;
+  height: 65vh;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  margin-bottom: 50vh;
+}
+
+.resumeItem{
+  /* background-color: darkblue; */
+  height: 60vh;
+  border-radius: 20px;
+  border-width: 15px;
+  border-style: solid;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  
+}
+.itemTwo{
+  background-color: green;
+}
+.itemThree{
+  background-color: orange;
+}
+
+.resumeDownload{
+  /* background-color: blue; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 1.5vh;
+  text-align: center;
+}
+
+/* ============================= FOOTER ========================== */
+
+.footerElements{
+  float: right;
+  margin-right: 16%;
+  /* background-color: green; */
+  display: inline-flex;
+}
+
+.footerStyle{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  /* background-color: red; */
+  /* margin-top: auto; */
+  padding-bottom: 2.5%;
+}
+
+.pixelIcon{
+  width: 2.5vw;
+  margin-left: 5px;
+}
+
+.pixelIcon:hover{
+  opacity: 50%;
+  
+}
+
+/* ====================  ~~~~ iphone ~~~~~ ======================== */
 
 @media screen and (max-width: 600px){
 
@@ -223,7 +268,7 @@ padding-right: 35vw;
     position: relative;
     z-index: 100;
     width: 100vw;
-    height: 28vh;
+    height: 24vh;
     /* background-color: magenta; */
   }
 
@@ -269,6 +314,10 @@ padding-right: 35vw;
     padding: 0;
   }
 
+  .px-1{
+    padding-left: 0;
+  }
+
   .ulStyle{
     padding: 0;
   }
@@ -277,12 +326,17 @@ padding-right: 35vw;
     font-size: 20px;
   }
 
-.mainStyle{
-  /* background-color: brown; */
-  position: relative;
-  bottom: 28vh;
-  /* mar */
-}
+  .mainStyle{
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vvh;
+    margin-bottom: 15vh;
+    position: relative;
+    bottom: 31.5vh;
+    /* background-color: green; */
+  }
+
 
   .contactSection{
     /* background-color: magenta; */
@@ -311,7 +365,7 @@ padding-right: 35vw;
    
     /* display: flex; */
     display: block;
-    height:50vh;
+    height:55vh;
     overflow-y: scroll;
     /* background-color: maroon; */
   
@@ -376,6 +430,17 @@ padding-right: 35vw;
     font-size: 4vw;
     margin-top: 0;
     padding-top: 0;
+  }
+
+  /* ================= resume ===================== */
+
+  .resumeSection{
+    padding-top: 2vh;
+    overflow-y: scroll;
+  }
+
+  .resumeItem{
+    margin-bottom: 2vh;
   }
 
   /* =================== footer ============== */

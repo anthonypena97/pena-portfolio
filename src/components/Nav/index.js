@@ -52,7 +52,7 @@ function Nav(props) {
   }
 
   return (
-    <header className="flex-row px-1 headerStyle">
+    <header className="flex-row  headerStyle">
       <h2 className="titleContainer">
         <a className="siteTitle" data-testid="link" href="/pena-portfolio">
           ANTHONY PEÑA

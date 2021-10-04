@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BackgroundVideo from './components/BackgroundVideo';
 import Nav from './components/Nav';
 import About from './components/About';
+import Resume from './components/Resume';
 // import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
@@ -34,6 +35,10 @@ function App() {
             <About
               currentCategory={currentCategory}
             ></About>
+
+            <Resume
+              currentCategory={currentCategory}
+            ></Resume>
 
           </>
         ) : (
