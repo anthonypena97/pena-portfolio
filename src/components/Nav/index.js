@@ -54,7 +54,7 @@ function Nav(props) {
   return (
     <header className="flex-row px-1 headerStyle">
       <h2 className="titleContainer">
-        <a className="siteTitle" data-testid="link" href="/">
+        <a className="siteTitle" data-testid="link" href="/pena-portfolio">
           ANTHONY PEÑA
         </a>
       </h2>
@@ -124,46 +124,50 @@ function Nav(props) {
           <p className="menuButton" >MENU</p>
         </span>
 
-        {/* ABOUT TAB */}
-        <span id="aboutDrop" style={{ display: "none" }}
-          onClick={() => {
-            setCurrentCategory("ABOUT");
-            setContactSelected(false);
-          }}
-        >
-          <a data-testid="about" href="#resume" onClick={() => setContactSelected(false)}>
-            ABOUT
-          </a>
-        </span>
+        <div className="dropMenu">
 
-        {/* PORTFOLIO TAB */}
-        <span id="portfolioDrop" style={{ display: "none" }}
-          onClick={() => {
-            setCurrentCategory("PORTFOLIO");
-            setContactSelected(false);
-          }}
-        >
-          <a data-testid="portfolio" href="#resume" onClick={() => setContactSelected(false)}>
-            PORTFOLIO
-          </a>
-        </span>
+          {/* ABOUT TAB */}
+          <span id="aboutDrop" style={{ display: "none" }}
+            onClick={() => {
+              setCurrentCategory("ABOUT");
+              setContactSelected(false);
+            }}
+          >
+            <a className="aboutItem" data-testid="about" href="#resume" onClick={() => setContactSelected(false)}>
+              ABOUT
+            </a>
+          </span>
 
-        {/* RESUME TAB */}
-        <span id="resumeDrop" style={{ display: "none" }}
-          onClick={() => {
-            setCurrentCategory("RESUME");
-            setContactSelected(false);
-          }}
-        >
-          <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
-            RESUME
-          </a>
-        </span>
+          {/* PORTFOLIO TAB */}
+          <span id="portfolioDrop" style={{ display: "none" }}
+            onClick={() => {
+              setCurrentCategory("PORTFOLIO");
+              setContactSelected(false);
+            }}
+          >
+            <a data-testid="portfolio" href="#resume" onClick={() => setContactSelected(false)}>
+              PORTFOLIO
+            </a>
+          </span>
 
-        {/* CONTACT TAB */}
-        <span id="contactDrop" style={{ display: "none" }} onClick={() => { setCurrentCategory("CONTACT"); }}><a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
-          CONTACT
-        </a></span>
+          {/* RESUME TAB */}
+          <span id="resumeDrop" style={{ display: "none" }}
+            onClick={() => {
+              setCurrentCategory("RESUME");
+              setContactSelected(false);
+            }}
+          >
+            <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
+              RESUME
+            </a>
+          </span>
+
+          {/* CONTACT TAB */}
+          <span id="contactDrop" style={{ display: "none" }} onClick={() => { setCurrentCategory("CONTACT"); }}><a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
+            CONTACT
+          </a></span>
+
+        </div>
 
 
 

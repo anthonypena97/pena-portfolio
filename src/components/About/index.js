@@ -7,7 +7,7 @@ function About(props) {
     currentCategory
   } = props;
 
-  console.log(currentCategory);
+  // console.log(currentCategory);
 
   if (currentCategory === "ABOUT") {
 
@@ -17,7 +17,7 @@ function About(props) {
           <img src={Image} className="my-2 " style={{ width: "100%" }} alt="cover" />
         </div>
         <div className=" aboutContainers aboutText">
-          <p>
+          <p className="aboutTextTitle">
             Artist & Web Developer
           </p>
           <p>
