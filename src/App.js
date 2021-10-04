@@ -28,11 +28,11 @@ function App() {
       ></Nav>
       <main className="mainStyle">
 
-
         {!contactSelected ? (
           <>
-            {/* <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About> */}
+
+
+
           </>
         ) : (
           <ContactForm></ContactForm>
