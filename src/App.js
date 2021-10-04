@@ -3,7 +3,7 @@ import BackgroundVideo from './components/BackgroundVideo';
 import Nav from './components/Nav';
 // import About from './components/About';
 // import Gallery from './components/Gallery';
-// import ContactForm from './components/Contact';
+import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,8 +12,10 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const [dropdownState, setDropdownState] = useState(0);
+
   return (
-    <div>
+    <div className="pageStyle">
       <BackgroundVideo></BackgroundVideo>
       {/* <h1>ANTHONY PENA</h1> */}
       <Nav
@@ -21,20 +23,22 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        dropdownState={dropdownState}
+        setDropdownState={setDropdownState}
       ></Nav>
-      <main>
+      <main className="mainStyle">
 
-      </main>
-      {/* <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
+
+
+
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
-      </main> */}
+
+      </main>
       <Footer />
     </div>
   );

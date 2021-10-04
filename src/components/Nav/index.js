@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Container from 'react-bootstrap/Container';
+import $ from 'jquery';
 
 function Nav(props) {
   const {
@@ -6,11 +10,46 @@ function Nav(props) {
     // contactSelected,
     currentCategory,
     setContactSelected,
+    dropdownState,
+    setDropdownState
   } = props;
 
   useEffect(() => {
     document.title = currentCategory;
   }, [currentCategory]);
+
+  // ================================== logic for dropdown menu ====================================
+  const smallMenu = () => {
+
+    // open dropdown menu
+    if (dropdownState === 0) {
+
+      $("#aboutDrop").attr("style", "display:block");
+
+      setTimeout(() => { $("#portfolioDrop").attr("style", "display:block"); }, 125);
+
+      setTimeout(() => { $("#resumeDrop").attr("style", "display:block"); }, 250);
+
+      setTimeout(() => { $("#contactDrop").attr("style", "display:block"); }, 500);
+
+      setDropdownState(1)
+
+      // close dropdown menu
+    } else if (dropdownState === 1) {
+
+      setTimeout(() => { $("#aboutDrop").attr("style", "display:none"); }, 500);
+
+      setTimeout(() => { $("#portfolioDrop").attr("style", "display:none"); }, 250);
+
+      setTimeout(() => { $("#resumeDrop").attr("style", "display:none"); }, 125);
+
+      $("#contactDrop").attr("style", "display:none")
+
+      setDropdownState(0);
+
+    }
+
+  }
 
   return (
     <header className="flex-row px-1 headerStyle">
@@ -19,7 +58,10 @@ function Nav(props) {
           ANTHONY PEÑA
         </a>
       </h2>
-      <nav>
+
+      {/* =============================== regular navbar ================================ */}
+
+      <nav className="bigNav">
         <ul className="flex-row ulStyle">
 
           {/* ABOUT SECTION */}
@@ -70,24 +112,66 @@ function Nav(props) {
               CONTACT
             </a></span>
           </li>
-          {/* {categories.map((category) => (
-            <li
-              className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))} */}
+
         </ul>
       </nav>
+
+      {/* =========================== dropdown menu logic ========================= */}
+
+      <div className="smallNav">
+
+        <span onClick={() => { smallMenu(true); }}>
+          <p className="menuButton" >MENU</p>
+        </span>
+
+        {/* ABOUT TAB */}
+        <span id="aboutDrop" style={{ display: "none" }}
+          onClick={() => {
+            setCurrentCategory("RESUME");
+            setContactSelected(false);
+          }}
+        >
+          <a data-testid="about" href="#resume" onClick={() => setContactSelected(false)}>
+            ABOUT
+          </a>
+        </span>
+
+        {/* PORTFOLIO TAB */}
+        <span id="portfolioDrop" style={{ display: "none" }}
+          onClick={() => {
+            setCurrentCategory("RESUME");
+            setContactSelected(false);
+          }}
+        >
+          <a data-testid="portfolio" href="#resume" onClick={() => setContactSelected(false)}>
+            PORTFOLIO
+          </a>
+        </span>
+
+        {/* RESUME TAB */}
+        <span id="resumeDrop" style={{ display: "none" }}
+          onClick={() => {
+            setCurrentCategory("RESUME");
+            setContactSelected(false);
+          }}
+        >
+          <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
+            RESUME
+          </a>
+        </span>
+
+        {/* CONTACT TAB */}
+        <span id="contactDrop" style={{ display: "none" }} onClick={() => { setCurrentCategory("CONTACT"); }}><a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
+          CONTACT
+        </a></span>
+
+
+
+      </div>
+
+
+
+
     </header>
   );
 }

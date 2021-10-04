@@ -23,13 +23,28 @@ ul {
   margin-right: 6%;
 }
 
+.mainStyle{
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+  height: 75vh;
+  margin-bottom: 15vh;
+  /* background-color: green; */
+}
+
+.smallNav{
+  display: none;
+}
+
 .footerStyle{
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 10vh;
   /* background-color: red; */
-  margin-bottom: 2.5%;
+  /* margin-top: auto; */
+  padding-bottom: 2.5%;
 }
 
 .footerElements{
@@ -49,14 +64,107 @@ ul {
   
 }
 
+.contactSection{
+  flex: 1;
+  /* background-color: red; */
+  /* height: 100%;
+  width: 100%; */
+  /* margin-top: 8%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contactForm{
+  /* width: auto; */
+  display: inline-block;
+  /* padding-left: 25%;
+  padding-right: 25%; */
+}
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSection div{
+  display: flex;
+  /* align-items: left; */
+  justify-content: space-between;
+}
+
+.contactTitle{
+  font-weight: 300;
+  font-size: 2vw;
+  font-style: italic;
+}
+
+.contactItem input, textarea{
+  /* display: flex;
+  justify-content: space-between; */
+  width: 70%;
+  /* display: inline; */
+  /* background-color: red; */
+ 
+}
+
+.submitContact button {
+  margin-top: 5%;
+  width: 100%;
+}
+
+
+
+.pageStyle{
+  /* background-color: hotpink; */
+  height: 100vh;
+  width: 100vw;
+}
+
 @media screen and (max-width: 600px){
+
+  .bigNav{
+    display: none;
+  }
+
+  .dropdownContainer{
+/* background-color: lightpink; */
+width: 100%;
+padding-left: 35vw;
+padding-right: 35vw;
+  }
+
+  .smallNav{
+    display: block;
+    position: 0;
+    height: 25vh;
+    /* background-color: magenta; */
+  }
+
+  
+  .menuButton:active{
+    opacity: 75%;
+  }
+
+  
+
+  .dropdownItem{
+    /* background-color: lightcoral; */
+    transform: none;
+  }
+
+  
   .flex-row{
     display: inline-block;
   }
 
   .headerStyle{
-    width: 100%;
+    width: 100vw;
     text-align: center;
+    margin: 0;
     margin-top: 10%;
   }
 
@@ -66,6 +174,21 @@ ul {
 
   .mx-2 a, span{
     font-size: 25px;
+  }
+
+  .contactSection{
+    /* background-color: magenta; */
+    height: 30vh;
+  }
+
+  .contactTitle{
+    font-size: 6vw;
+    margin-bottom: 3vh;
+  }
+
+  .submitContact button{
+    font-size: 5vw;
+    padding: 5px;
   }
 
   .footerStyle{
