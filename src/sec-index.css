@@ -1,0 +1,579 @@
+
+body {
+  background-color: rgb(61, 61, 66);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 2vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.backgroundVideo{
+  position: fixed;
+  z-index: -2;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* ======================= HEADER NAVBAR ========================= */
+
+.headerStyle{
+  margin-top: 2.5%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 2vh;
+}
+
+.mainStyle{
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+  height: 90vh;
+  margin-bottom: 15vh;
+  /* background-color: green; */
+}
+
+.siteTitle{
+  vertical-align: text-bottom;
+}
+
+.liStyle{
+  vertical-align: text-bottom;
+}
+
+.smallNav{
+  display: none;
+}
+
+/* ================ PORTFOLIO ============== */
+
+.portfolioSection{
+  /* background-color: cadetblue; */
+  margin-left: 18vw;
+  margin-right: 18vw;
+  margin-bottom: 18vh;
+}
+
+.portfolioBody{
+  background-color: rgba(3, 3, 65, 0.705);
+  /* padding-bottom: 2vh; */
+  /* border-top-style: none; */
+  height: 33vh;
+  border-top-style: none;
+}
+
+.portfolioLink {
+ color: white;
+  background-color: rgba(75, 110, 224, 0.634);
+  text-align: center;
+  padding: 0.5vh;
+  border-top-style: none;
+
+}
+
+.portfolioLink:hover {
+ opacity: 0.5;
+}
+
+
+.portfolioList{
+  margin:0;
+}
+
+/* ======================== CONTACT SECTION ==================== */
+
+.contactSection{
+  flex: 1;
+  /* background-color: red; */
+  /* height: 100%;
+  width: 100%; */
+  /* margin-top: 8%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contactForm{
+  /* width: auto; */
+  display: inline-block;
+  /* padding-left: 25%;
+  padding-right: 25%; */
+}
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+}
+
+.contactSection div{
+  display: flex;
+  /* align-items: left; */
+  justify-content: space-between;
+}
+
+.contactTitle{
+  font-weight: 300;
+  font-size: 2vw;
+  font-style: italic;
+}
+
+.contactItem input, textarea{
+  /* display: flex;
+  justify-content: space-between; */
+  width: 70%;
+  /* display: inline; */
+  /* background-color: red; */
+ 
+}
+
+.submitContact button {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.pageStyle{
+  /* background-color: hotpink; */
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ============================ ABOUT PAGE ======================= */
+
+.aboutStyle{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  display: flex;
+  /* background-color: maroon; */
+  margin-top: 5vh;
+
+  -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 10s; /* Firefox < 16 */
+        -ms-animation: fadein 10s; /* Internet Explorer */
+         -o-animation: fadein 10s; /* Opera < 12.1 */
+            animation: fadein 10s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.aboutContainers{
+  /* background-color: mediumaquamarine; */
+  padding-right: 2vw;
+}
+
+.aboutText {
+  width: 150%;
+  padding-right: 0;
+  text-align: left;
+}
+
+.aboutImage{
+  width: 60vw;
+}
+
+
+.aboutText p{
+  font-size: 2vw;
+}
+
+/* ============================= RESUME ======================== */
+
+.resumeSection{
+  /* background-color: crimson; */
+  width: 100vw;
+  height: 65vh;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  margin-bottom: 50vh;
+}
+
+.resumeItem{
+  /* background-color: darkblue; */
+  height: 60vh;
+  border-radius: 20px;
+  border-width: 15px;
+  border-style: solid;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.itemTwo{
+  background-color: green;
+}
+.itemThree{
+  background-color: orange;
+}
+
+.resumeDownload{
+  /* background-color: blue; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 1.5vh;
+  text-align: center;
+}
+
+/* ============================= FOOTER ========================== */
+
+.footerElements{
+  float: right;
+  margin-right: 16%;
+  /* background-color: green; */
+  display: inline-flex;
+}
+
+.footerStyle{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  /* background-color: red; */
+  /* margin-top: auto; */
+  padding-bottom: 2.5%;
+}
+
+.pixelIcon{
+  width: 2.5vw;
+  margin-left: 5px;
+}
+
+.pixelIcon:hover{
+  opacity: 50%;
+  
+}
+
+/* ====================  ~~~~ iphone ~~~~~ ======================== */
+
+@media screen and (max-width: 600px){
+
+  html{
+    width: 100%;
+  }
+
+  .body {
+    margin:0;
+    padding: 0;
+    width: 80%;
+  }
+
+  /* ============== mobile navbar ============== */
+
+  .bigNav{
+    display: none;
+  }
+
+  .dropdownContainer{
+/* background-color: lightpink; */
+width: 100%;
+padding-left: 35vw;
+padding-right: 35vw;
+  }
+
+  .smallNav {
+    display: block;
+    position: relative;
+    z-index: 100;
+    width: 100vw;
+    height: 26vh;
+    /* background-color: magenta; */
+  }
+
+
+  .smallNav div{
+   width: 100vw;
+   /* margin-left: 5vw; */
+   /* margin-right: 20%; */
+   
+  }
+
+ .menuButton{
+   padding: 0vh;
+   margin: 1.1vh;
+  
+ }
+  
+  .menuButton:active{
+    opacity: 75%;
+  }
+
+  .dropdownItem{
+    /* background-color: lightcoral; */
+    transform: none;
+  }
+
+  .dropMenu{
+    background-color: rgba(25, 25, 112, 0.822);
+    /* z-index: 10000; */
+    /* opacity: 1; */
+    /* width: 100%; */
+  }
+
+  
+  .flex-row{
+    display: inline-block;
+  }
+
+  .headerStyle{
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 9%;
+    padding: 0;
+  }
+
+  .px-1{
+    padding-left: 0;
+  }
+
+  .ulStyle{
+    padding: 0;
+  }
+
+  .mx-2 a, span{
+    font-size: 20px;
+  }
+
+  .mainStyle{
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vvh;
+    margin-bottom: 15vh;
+    position: relative;
+    bottom: 31.5vh;
+    /* background-color: green; */
+  }
+
+
+  .contactSection{
+    /* background-color: magenta; */
+    margin-top: 8vh;
+    height: 50vh;
+  }
+
+  .contactTitle{
+    font-size: 6vw;
+    margin-bottom: 3vh;
+  }
+
+  .submitContact button{
+    font-size: 5vw;
+    padding: 5px;
+  }
+
+  /* =============== about page ============= */
+
+  .aboutStyle{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+   
+    /* display: flex; */
+    display: block;
+    height:53vh;
+    overflow-y: scroll;
+    /* background-color: maroon; */
+  
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation-fill-mode: initial; 
+    animation-fill-mode: initial; /*Changed from both to initial*/
+    -webkit-animation-backface-visibility: hidden;
+         -moz-animation: fadein 5s; /* Firefox < 16 */
+          -ms-animation: fadein 5s; /* Internet Explorer */
+           -o-animation: fadein 5s; /* Opera < 12.1 */
+              animation: fadein 5s;
+    
+  }
+  
+  .aboutContainers{
+    /* background-color: mediumaquamarine; */
+    /* padding-right: 2vw; */
+    width: 100%; 
+  }
+  
+  .aboutText {
+    width: 100%;
+    text-align: justify;
+    /* background-color: mediumorchid; */
+  }
+  
+  .aboutImage{
+    /* width: 70vw; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+  }
+
+  .aboutImage img{
+    /* width: 70vw; */
+    padding: 0;
+    margin: 0;
+    /* padding-bottom: 6vh; */
+    /* z-index: -1; */
+    /* height: 100%; */
+    /* object-fit: cover */
+  }
+
+  .aboutText {
+    padding-top: 15px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+
+  .aboutText p{
+    font-size: 5vw;
+    margin-top: 1vh;
+  }
+
+  .aboutTextTitle{
+    text-align: center;
+  }
+
+  .descriptionText p {
+    font-size: 4vw;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 20vh;
+  }
+
+  /* ================= resume ===================== */
+
+  .resumeSection{
+    padding-top: 2vh;
+    overflow-y: scroll;
+    padding-top: 6vh;
+    padding-bottom: 30vh;
+    height: 55vh;
+  }
+
+  .resumeItem{
+    height: 85%;
+    margin-bottom: 6vh;
+  }
+
+  .resumeItem{
+   margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  .resumeDownload{
+    /* background-color: tomato; */
+    padding-top: 8vh;
+  }
+
+  /* ================= portfolio =============== */
+
+  .portfolioSection{
+    /* background-color: cadetblue; */
+    margin: 0;
+    padding: 0;
+    margin-top: 6vh;
+    padding-top: 12vh;
+    margin-left: 12vw;
+    margin-right: 10vw;
+    /* margin-bottom: 18vh; */
+    height: 55vh;
+    overflow-y: scroll;
+  }
+
+  .card{
+    margin:0;
+    border-style: none;
+  }
+
+  .portfolioBody{
+    background-color: rgba(3, 3, 65, 0.705);
+    /* padding-bottom: 2vh; */
+    /* border-top-style: none; */
+    height: 33vh;
+    border-top-style: none;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  
+  .portfolioLink {
+   color: white;
+    background-color: rgba(75, 110, 224, 0.634);
+    text-align: center;
+    padding: 0.5vh;
+    border-top-style: none;
+  
+  }
+  
+  .portfolioLink:hover {
+   opacity: 0.5;
+  }
+  
+  
+  .portfolioList{
+    margin:0;
+  }
+
+  /* =================== footer ============== */
+
+  .footerStyle{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2.5%;
+  }
+
+  .footerElements{
+    /* float: right; */
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pixelIcon{
+    width: 10vw;
+  }
+
+}
