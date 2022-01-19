@@ -1,5 +1,5 @@
 # Pena Portfolio
-### Profesional Full Stack Web Developer Portfolio Page
+### Professional Full Stack Web Developer Portfolio Page
 ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
 ![pena-portfolio-demo](https://user-images.githubusercontent.com/79285555/135895002-5251e88e-a619-40fa-877f-7455dbb651cf.gif)
