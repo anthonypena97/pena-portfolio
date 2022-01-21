@@ -4,8 +4,8 @@
 
 ![pena-portfolio-demo](https://user-images.githubusercontent.com/79285555/135895002-5251e88e-a619-40fa-877f-7455dbb651cf.gif)
 
-
-#### https://anthonypena97.github.io/pena-portfolio/
+UPDATED VERSION - https://github.com/anthonypena97/anthonypena97.github.io
+#### https://anthonypena97.github.io/
 
 
 <p> ---------------------------------------- </p>
